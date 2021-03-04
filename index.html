@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My shopping list</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"defer></script>
+
+
+</head>
+<body>
+	<div class="container">
+		<h2>Moja lista zakupów</h2>
+		<div class="input-group">
+			<input placeholder="Add product to list" type="text" class="js-new-item form-control">
+			<span class="input-group-btn">
+				<button @click="addItem" class="js-add btn btn-default" type="button">Add!</button>
+			</span>
+		</div>
+		<ul>
+			<li>
+				<div class="checkbox">
+					<label>
+						<input class="js-item" name="list" type="checkbox"> Book
+					</label>
+				</div>
+			</li>
+			<li class="removed">
+				<div class="checkbox">
+					<label>
+						<input class="js-item" name="list" type="checkbox" checked> Cat
+					</label>
+				</div>
+			</li>
+		</ul>
+	</div>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
